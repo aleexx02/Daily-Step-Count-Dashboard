@@ -30,7 +30,7 @@ streamlit run dashboard.py
 ```
 **Note:** replace `dashboard.py` with your actual filename if different.
 
-The dashboard will open automatically in your default web browser at `http://localhost:8501`
+The dashboard will open automatically in your default web browser at `http://localhost:8501`. This link is also in `online_tool.txt`.
 
 ## Project Structure
 ```
