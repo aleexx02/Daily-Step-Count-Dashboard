@@ -11,7 +11,7 @@ st.set_page_config(page_title="Step Count Dashboard", layout="wide")
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_excel('dataset_assignment1.xlsx')
+    df = pd.read_excel('personal_dataset.xlsx')
     df['Date'] = pd.to_datetime(df['Date'])
     df = df.sort_values('Date')
     
@@ -791,4 +791,5 @@ with bar_col3:
 
 st.markdown("---")
 st.markdown("<p style='text-align: center; color: gray;'>🚶‍♂️ Keep moving towards your goals!</p>", unsafe_allow_html=True)
+
 
