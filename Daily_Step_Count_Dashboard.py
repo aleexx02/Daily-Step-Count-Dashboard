@@ -550,7 +550,7 @@ bar_col1, bar_col2, bar_col3 = st.columns(3)
 # CHART 1: BAR CHART - Day of Week
 # ============================================
 with bar_col1:
-    st.markdown("<h3 style='text-align: center;margin-bottom: -28px'>📅 Which days am I most active?</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center;margin-bottom: -10px'>📅 Which days am I most active?</h3>", unsafe_allow_html=True)
 
     day_order = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     day_avg = filtered_df.groupby('Day of week')['Step Count'].mean()
@@ -647,7 +647,7 @@ with bar_col1:
 # CHART 2: BAR CHART - Temperature
 # ============================================
 with bar_col2:
-    st.markdown("<h3 style='text-align: center;margin-bottom: -28px'>🌡️ How does temperature affect my walking habits?</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center;margin-bottom: -10px'>🌡️ How does temperature affect my walking habits?</h3>", unsafe_allow_html=True)
 
     temp_bin_avg = filtered_df.groupby('Temp_Bin', observed=True)['Step Count'].mean()
 
@@ -721,7 +721,7 @@ with bar_col2:
 # CHART 3: BAR CHART - Location
 # ============================================
 with bar_col3:
-    st.markdown("<h3 style='text-align: center; margin-bottom: -28px;'>📍 Where do I walk the most?</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center; margin-bottom: -10px;'>📍 Where do I walk the most?</h3>", unsafe_allow_html=True)
 
     location_avg = filtered_df.groupby('Location')['Step Count'].mean().sort_values(ascending=False)
 
@@ -791,5 +791,6 @@ with bar_col3:
 
 st.markdown("---")
 st.markdown("<p style='text-align: center; color: gray;'>🚶‍♂️ Keep moving towards your goals!</p>", unsafe_allow_html=True)
+
 
 
