@@ -38,11 +38,13 @@ The dashboard will open automatically in your default web browser at `http://loc
 ├── dashboard.py                          # Main dashboard application
 ├── dataset_assignment1.xlsx              # Data file
 ├── requirements.txt                      # Python dependencies
-└── README.md                            # This file
+├── README.md                             # This file
+├── presentation.pdf                      # Project presentation slides
+├── online_tool.txt                       # Online dashboard URL
+└── thumbnail.png                         # Dashboard preview image
 ```
 
 ## Data Format
-
 The Excel file should contain the following columns:
 - `Date`: Date of the record.
 - `Step Count`: Number of steps taken.
@@ -64,5 +66,15 @@ The Excel file should contain the following columns:
   - 🟡 Amber: Close to goal ($geq$ 8,800 steps)
   - 🔴 Red: Below goal (< 8,800 steps)
 
+
+## Deliverables
+- **dashboard.py**: Code for the interactive Streamlit dashboard application
+- **dataset_assignment1.xlsx**: 100-day step count dataset
+- **presentation.pdf**: Project presentation
+- **thumbnail.png**: Dashboard screenshot
+- **online_tool.txt**: Link to the dashboard
+- **requirements.txt**: Python package dependencies
+- **README.md**: Setup and usage instructions
+  
 ## Author
 [Alexandra Perruchot-Triboulet Rodríguez]
