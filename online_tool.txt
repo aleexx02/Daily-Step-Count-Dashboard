@@ -1,1 +1,1 @@
-http://localhost:8501/
+https://daily-step-count-dashboard-mpnq58patoarpqpahpmpen.streamlit.app/
